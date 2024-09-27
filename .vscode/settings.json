@@ -1,11 +1,11 @@
-// // .vscode/settings.json
-// {
-//   "files.exclude": {
-//     "*-*.json": true,
-//     "*md": true,
-//     ".*i*": true,
-//     ".next": true,
-//     "*mjs": true,
-//     "*co*.json": true
-//   }
-// }
+// .vscode/settings.json
+{
+  "files.exclude": {
+    "*-*.json": true,
+    "*md": true,
+    ".*i*": true,
+    ".next": true,
+    "*mjs": true,
+    "*co*.json": true
+  }
+}
