@@ -1,3 +1,5 @@
+import Header from "@/components/Header";
+import Nab from "@/components/Nab";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -19,11 +21,20 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className=" dark ">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-row">
+          <nav className="hidden lg:flex">
+            <Nab />
+          </nav>
+
+          <main className="p-2 lg:ml-[300px] w-full">
+            <Header />
+            <div className="">{children}</div>
+          </main>
+        </div>
       </body>
     </html>
   );
